@@ -52,3 +52,6 @@
 
 [init]
   defaultBranch = master
+[user]
+	email = adrien.schaffner@gmail.com
+	name = Adrien Schaffner

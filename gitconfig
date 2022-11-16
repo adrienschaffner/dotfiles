@@ -12,6 +12,7 @@
 [core]
   pager = less -FRSX
   editor = code --wait
+	excludesfile = /Users/adrienschaffner/.gitignore_global
 
 [alias]
   co = checkout
@@ -54,4 +55,10 @@
   defaultBranch = master
 [user]
 	email = adrien.schaffner@gmail.com
-	name = Adrien Schaffner
+	name = adrien schaffner
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /private/var/folders/qw/81qz6d3d1dn3060mbwpnhs4c0000gn/T/AppTranslocation/9E738CB6-22FC-4819-B0A4-FB3D1D6C620E/d/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
